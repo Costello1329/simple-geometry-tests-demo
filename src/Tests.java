@@ -16,7 +16,7 @@ public class Tests {
 
         final Generator pointGenerator = new Generator(
             testContext,
-            testContext.getClassesToTest()[0],
+            Arrays.asList(testContext.getClassesToTest()[0]),
             Arrays.asList(coordinateSupplier, coordinateSupplier)
         );
 
@@ -35,13 +35,13 @@ public class Tests {
 
         final Generator pointGenerator = new Generator(
             testContext,
-            testContext.getClassesToTest()[0],
+            Arrays.asList(testContext.getClassesToTest()[0]),
             Arrays.asList(coordinateSupplier, coordinateSupplier)
         );
 
         final Generator squareGenerator = new Generator(
             testContext,
-            testContext.getClassesToTest()[1],
+            Arrays.asList(testContext.getClassesToTest()[1]),
             Arrays.asList(pointGenerator, pointGenerator)
         );
 
